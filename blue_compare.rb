@@ -9,17 +9,15 @@ class BlueCompare
 	end
 
 	def self.calculate_quality(expires_in,quality)
-		case expires_in
-		when 0
+		# binding.pry
+		case 
+		when expires_in < 1
 			quality = 0
-		when 1..5
-			# binding.pry
+		when expires_in.between?(1,5)
 			quality += 3
-		when 6..10
-			# binding.pry
+		when expires_in.between?(6,10)
 			quality += 2
 		else
-			# binding.pry
 			quality += 1
 		end
 		[quality,50].min

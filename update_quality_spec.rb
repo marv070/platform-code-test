@@ -42,7 +42,6 @@ describe '#update_quality' do
       end
 
       context 'given Blue First' do
-        before { pending }
         let(:name) { 'Blue First' }
 
         before do

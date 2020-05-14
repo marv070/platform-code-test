@@ -85,7 +85,6 @@ describe '#update_quality' do
       end
 
       context 'given Blue Distinction Plus' do
-        before { pending }
         let(:initial_quality) { 80 }
         let(:name) { 'Blue Distinction Plus' }
 
@@ -110,7 +109,6 @@ describe '#update_quality' do
       end
 
       context 'given Blue Compare' do
-        before { pending }
         let(:name) { 'Blue Compare' }
 
         before do

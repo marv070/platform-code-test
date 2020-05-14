@@ -1,6 +1,5 @@
 class BlueCompare
 	
-
 	def self.update(award)
 		award.quality = calculate_quality(award.expires_in, award.quality)
 		award.expires_in -= 1
@@ -23,4 +22,3 @@ class BlueCompare
 	end
 
 end
-

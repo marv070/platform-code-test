@@ -13,8 +13,6 @@ require_relative 'blue_star.rb'
   @@strategies['Blue Star'] = BlueStar
   @@strategies.default = Normal
 
-
-
 def update_quality(awards)
   awards.each do |award|
     strategy = @@strategies[award.name].update(award)

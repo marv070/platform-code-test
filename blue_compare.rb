@@ -9,7 +9,6 @@ class BlueCompare
 	end
 
 	def self.calculate_quality(expires_in,quality)
-		# binding.pry
 		case 
 		when expires_in < 1
 			quality = 0
